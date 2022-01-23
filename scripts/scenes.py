@@ -42,6 +42,7 @@ def nerf_real_360(name, frameidx):
 	}
 scenes_nerf = {
 	"fox"         : ours_real_converted("fox/", frameidx=0),
+	"duck"        : ours_real_converted("duck/", frameidx=0),
 	"lego"      : nerf_synthetic("lego", frameidx=52),
 	"drums"     : nerf_synthetic("drums", frameidx=52),
 	"ship"      : nerf_synthetic("ship", frameidx=52),
