@@ -20,7 +20,8 @@ def ours_real_converted(path, frameidx):
 		"dataset_test"  : "transforms.json",
 		"dataset"       : "",
 		"test_every"    : 5,
-		"frameidx"      : frameidx
+		"frameidx"      : frameidx,
+		"network"		: "base",
 	}
 
 def nerf_synthetic(name, frameidx):
@@ -43,6 +44,7 @@ def nerf_real_360(name, frameidx):
 scenes_nerf = {
 	"fox"         : ours_real_converted("fox/", frameidx=0),
 	"duck"        : ours_real_converted("duck/", frameidx=0),
+	"minika"        : ours_real_converted("minika/", frameidx=0),
 	"lego"      : nerf_synthetic("lego", frameidx=52),
 	"drums"     : nerf_synthetic("drums", frameidx=52),
 	"ship"      : nerf_synthetic("ship", frameidx=52),
